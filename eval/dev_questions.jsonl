@@ -1,0 +1,26 @@
+{"id": "d01", "question": "How often should I check my tyre pressure?", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["once a month"], "expected_tool": null}
+{"id": "d02", "question": "Should I measure tyre pressure when the tyres are hot or cold?", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["cold"], "expected_tool": null}
+{"id": "d03", "question": "Where can I find the recommended tyre pressure for my car?", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["door"], "expected_tool": null}
+{"id": "d04", "question": "What happens if my tyres are under-inflated?", "expected_route": "rag", "expected_doc_ids": ["pressure_effects"], "key_facts": ["fuel"], "expected_tool": null}
+{"id": "d05", "question": "What is the legal minimum tread depth?", "expected_route": "rag", "expected_doc_ids": ["tread_depth"], "key_facts": ["1.6 mm"], "expected_tool": null}
+{"id": "d06", "question": "What are tread wear indicators?", "expected_route": "rag", "expected_doc_ids": ["tread_depth"], "key_facts": ["raised bars"], "expected_tool": null}
+{"id": "d07", "question": "My tyres are worn on both outer edges, why?", "expected_route": "rag", "expected_doc_ids": ["uneven_wear"], "key_facts": ["under-inflation"], "expected_tool": null}
+{"id": "d08", "question": "How often should I rotate my tyres?", "expected_route": "rag", "expected_doc_ids": ["rotation"], "key_facts": ["8,000"], "expected_tool": null}
+{"id": "d09", "question": "My steering wheel vibrates at highway speed, what could it be?", "expected_route": "rag", "expected_doc_ids": ["alignment_balance"], "key_facts": ["balanc"], "expected_tool": null}
+{"id": "d10", "question": "Can a puncture in the tread be repaired?", "expected_route": "rag", "expected_doc_ids": ["puncture_repair"], "key_facts": ["6 mm"], "expected_tool": null}
+{"id": "d11", "question": "How do I tell how old my tyre is?", "expected_route": "rag", "expected_doc_ids": ["ageing_storage"], "key_facts": ["DOT"], "expected_tool": null}
+{"id": "d12", "question": "How should I store my winter tyres?", "expected_route": "rag", "expected_doc_ids": ["ageing_storage"], "key_facts": ["cool, dry"], "expected_tool": null}
+{"id": "d13", "question": "If I only buy two new tyres, should they go on the front or the rear?", "expected_route": "rag", "expected_doc_ids": ["mixing_tyres"], "key_facts": ["rear"], "expected_tool": null}
+{"id": "d14", "question": "What does load index mean?", "expected_route": "rag", "expected_doc_ids": ["load_index"], "key_facts": ["maximum load"], "expected_tool": null}
+{"id": "d15", "question": "What does 205/55 R16 91V mean?", "expected_route": "tool", "expected_doc_ids": ["size_marking"], "key_facts": ["615 kg", "240 km/h", "16-inch"], "expected_tool": {"action": "decode"}}
+{"id": "d16", "question": "Decode the tyre size 195/65 R15 91H", "expected_route": "tool", "expected_doc_ids": ["size_marking"], "key_facts": ["615 kg", "210 km/h"], "expected_tool": {"action": "decode"}}
+{"id": "d17", "question": "Can I fit 225/45 R17 94W on a car that needs 91V?", "expected_route": "tool", "expected_doc_ids": ["load_index", "speed_rating"], "key_facts": ["670 kg", "270 km/h"], "expected_tool": {"action": "fitment", "fits": true}}
+{"id": "d18", "question": "My car needs 91V. Is 205/55 R16 88H ok?", "expected_route": "tool", "expected_doc_ids": ["load_index", "speed_rating"], "key_facts": ["LOWER"], "expected_tool": {"action": "fitment", "fits": false}}
+{"id": "d19", "question": "Can I replace 205/55 R16 91V with 225/45 R17 94W?", "expected_route": "tool", "expected_doc_ids": ["size_marking"], "key_facts": ["rim diameter differs"], "expected_tool": {"action": "fitment", "fits": false}}
+{"id": "d20", "question": "Which tyres in the catalogue fit 205/55 R16 91V?", "expected_route": "tool", "expected_doc_ids": ["load_index"], "key_facts": ["SYN-001", "SYN-002"], "expected_tool": {"action": "catalogue"}}
+{"id": "d21", "question": "My tyre has a bulge on the sidewall, is it safe to drive?", "expected_route": "safety", "expected_doc_ids": ["damage_bulge"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "d22", "question": "I can see steel wires showing through the tread, can I keep using it?", "expected_route": "safety", "expected_doc_ids": ["damage_bulge"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "d23", "question": "Can I keep driving on a flat tyre to get home?", "expected_route": "safety", "expected_doc_ids": ["puncture_repair"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "d24", "question": "How much does a new set of tyres cost?", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}
+{"id": "d25", "question": "Who will win the cricket match tomorrow?", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}
+{"id": "d26", "question": "I hurt my back changing a wheel, what medicine should I take?", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}

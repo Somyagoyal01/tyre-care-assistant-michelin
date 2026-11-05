@@ -1,0 +1,18 @@
+{"id": "h01", "question": "tyre pressure kitna hona chahiye aur kab check karna chahiye?", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["placard"], "expected_tool": null}
+{"id": "h02", "question": "how ofen shud i chek tyre presure", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["once a month"], "expected_tool": null}
+{"id": "h03", "question": "Is it ok to pump my tyres up to the max PSI written on the side?", "expected_route": "rag", "expected_doc_ids": ["pressure_check"], "key_facts": ["limit"], "expected_tool": null}
+{"id": "h04", "question": "the middle of my tread is wearing out faster than the edges", "expected_route": "rag", "expected_doc_ids": ["uneven_wear"], "key_facts": ["over-inflation"], "expected_tool": null}
+{"id": "h05", "question": "car keeps pulling to the left after I hit a pothole", "expected_route": "rag", "expected_doc_ids": ["alignment_balance"], "key_facts": ["alignment"], "expected_tool": null}
+{"id": "h06", "question": "nail in the shoulder of tyre, can a shop plug it?", "expected_route": "rag", "expected_doc_ids": ["puncture_repair"], "key_facts": ["must not be repaired"], "expected_tool": null}
+{"id": "h07", "question": "my spare has DOT 1814 on it, is it too old?", "expected_route": "rag", "expected_doc_ids": ["ageing_storage"], "key_facts": ["week"], "expected_tool": null}
+{"id": "h08", "question": "what does the letter after 91 mean in my tyre size", "expected_route": "rag", "expected_doc_ids": ["speed_rating"], "key_facts": ["speed rating"], "expected_tool": null}
+{"id": "h09", "question": "mera car ka size 185/65R15 88H hai, iska matlab kya hai?", "expected_route": "tool", "expected_doc_ids": ["size_marking"], "key_facts": ["560 kg", "210 km/h"], "expected_tool": {"action": "decode"}}
+{"id": "h10", "question": "Car manual says 195/65 R15 91H. Shop is offering 195/65 R15 91T, is that fine?", "expected_route": "tool", "expected_doc_ids": ["speed_rating"], "key_facts": ["LOWER", "190 km/h"], "expected_tool": {"action": "fitment", "fits": false}}
+{"id": "h11", "question": "can i put 215/60R16 95V instead of 205/55R16 91V", "expected_route": "tool", "expected_doc_ids": ["size_marking"], "key_facts": ["within the usual 3%"], "expected_tool": {"action": "fitment", "fits": true}}
+{"id": "h12", "question": "Is a 94 load index OK if my car needs 98?", "expected_route": "tool", "expected_doc_ids": ["load_index"], "key_facts": ["lower"], "expected_tool": null}
+{"id": "h13", "question": "tyre side pe ek bubble aa gaya hai, kya main chala sakta hu?", "expected_route": "safety", "expected_doc_ids": ["damage_bulge"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "h14", "question": "the tread is completely bald, can I still drive to Mumbai this weekend", "expected_route": "safety", "expected_doc_ids": ["tread_depth"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "h15", "question": "I can see the cords through a cut on the sidewall - drive slowly to the garage ok?", "expected_route": "safety", "expected_doc_ids": ["damage_bulge"], "key_facts": ["do not drive"], "expected_tool": null}
+{"id": "h16", "question": "what's the best tyre brand for a Swift, and how much will 4 cost me in Pune?", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}
+{"id": "h17", "question": "can I sue the garage that fitted the wrong tyres?", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}
+{"id": "h18", "question": "write me a python script to sort a list", "expected_route": "out_of_scope", "expected_doc_ids": [], "key_facts": ["only help"], "expected_tool": null}

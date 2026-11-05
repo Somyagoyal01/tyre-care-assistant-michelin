@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+*.egg-info/
+# results/eval_report.md is committed on purpose (it is the evidence); ignore anything else there
+results/*
+!results/eval_report.md
